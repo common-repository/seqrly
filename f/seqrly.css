@@ -1,0 +1,289 @@
+/* yuicompress openid.css -o openid.min.css
+ * @see http://developer.yahoo.com/yui/compressor/
+ */
+
+#openid_enabled_link, .openid_link, #openid_identifier, #commentform #openid_identifier {
+	background-image: url('openid.gif');
+	background-position: 3px 50%;
+	background-repeat: no-repeat; 
+	padding-left: 21px !important; 
+}
+
+.commentWithSeqrly {
+	/*background-image: url('Seqrly24.png');
+	background-position: 3px 50%;
+	background-repeat: no-repeat;
+	padding-left: 21px !important;*/ 
+        position: relative;
+        top:5px;
+	width: 120px;
+	height: 32px;
+}
+
+.seqrly_comment_icon {
+	background-image: url('IconOnly20.png');
+	background-repeat: no-repeat; 
+	padding-left: 21px !important; 
+        padding-bottom: 45px;
+        padding-top: 0px;
+}
+
+.openid_loading {
+	background: url('ajax-loader.gif') right center no-repeat;
+}
+
+body.login #openid_identifier {
+	width: 92%;
+	font-size: 20px;
+	background-color: #FFF;
+	border: 1px solid #ccc;
+	padding: 3px 3px 3px 18px;
+	margin-right: 6px;
+}
+
+#openid_comment {
+	margin: 0.8em 1em;
+	display:block;
+}
+#openid_comment input {
+	width: auto;
+}
+
+/* fix link color on wp-login.php */
+body.login form#loginform a.legacy, 
+body.login form#registerform a.legacy {
+	color: #FFF;
+}
+
+#seqrlyButton {
+	float:right;
+	padding-bottom: 0.2em;
+}
+
+/*
+ * Button Object
+ */
+
+/*
+ * 1. Corrects inability to style clickable 'input' types in iOS
+ * 2. Remove excess padding in IE6/7
+ * 3. IE6/7 inline-block hack for native block-level elements
+ * Reference: http://nicolasgallagher.com/lab/css3-social-signin-buttons/#button
+ */
+
+.btn-auth {
+    position: relative;
+    display: inline-block;
+    height: 22px;
+    padding: 4px 1em 0px 1em;
+    border: 1px solid #999;
+    border-radius: 2px;
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 22px;
+    white-space: nowrap;
+    cursor: pointer;
+/*    color: #222; */
+    background: #fff;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    /* iOS */
+    -webkit-appearance: none; /* 1 */
+    /* IE6/7 hacks */
+    *overflow: visible;  /* 2 */
+    *display: inline; /* 3 */
+    *zoom: 1; /* 3 */
+    font: 13px/1.333 "lucida grande", tahoma, sans-serif;
+    letter-spacing:1px;
+}
+
+.btn-auth:hover,
+.btn-auth:focus,
+.btn-auth:active {
+    color: #222;
+    text-decoration: none;
+}
+
+.btn-auth:before {
+    content: "";
+    float: left;
+    width: 22px;
+    height: 22px;
+}
+
+/*
+ * 36px
+ */
+
+.btn-auth.large {
+    height: 36px;
+    line-height: 36px;
+    font-size: 20px;
+    padding-top: 0px;
+}
+
+.btn-auth.large:before {
+    width: 36px;
+    height: 36px;
+}
+
+/*
+ * Remove excess padding and border in FF3+
+ */
+
+.btn-auth::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+
+
+
+
+/* Open ID
+   ========================================================================== */
+
+.btn-openid:hover,
+.btn-openid:focus {
+    border-color: #777;
+    background: #fcfcfc;
+}
+
+.btn-openid:active {
+    background: #f5f5f5;
+}
+
+/*
+ * Icon
+ */
+
+.btn-openid:before {
+    margin: 0 0.6em 0 -0.7em;
+    background-image:url(./auth-icons.png);
+    background-position: -154px -3px;
+}
+
+.btn-openid.large:before {
+    background-image:url(./auth-icons.png);
+    background-position: -252px -23px;
+}
+
+
+/* Seqrly
+   ========================================================================== */
+
+.btn-seqrly {
+    /*color: #327695;*/
+    color: white;
+    border-color: #8dc2e4;
+background: #c6d5ea; /* Old browsers */
+background: -moz-linear-gradient(top,  #c6d5ea 0%, #7995c2 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c6d5ea), color-stop(100%,#7995c2)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #c6d5ea 0%,#7995c2 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #c6d5ea 0%,#7995c2 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #c6d5ea 0%,#7995c2 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #c6d5ea 0%,#7995c2 100%); /* W3C */
+    -webkit-box-shadow: inset 0 1px 0 #fff;
+    box-shadow: inset 0 1px 0 #fff;
+}
+
+.btn-seqrly:hover,
+.btn-seqrly:focus,
+.btn-seqrly:active {
+	color: white;
+    border-color: #8dc2e4;
+background: #b8c6df; /* Old browsers */
+background: -moz-linear-gradient(top,  #b8c6df 0%, #6d88b7 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b8c6df), color-stop(100%,#6d88b7)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #b8c6df 0%,#6d88b7 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #b8c6df 0%,#6d88b7 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #b8c6df 0%,#6d88b7 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #b8c6df 0%,#6d88b7 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b8c6df', endColorstr='#6d88b7',GradientType=0 ); /* IE6-9 */
+}
+
+.btn-seqrly:active {
+    background: #b8c6df;
+    -webkit-box-shadow: inset 0 1px 0 #bbd6e7;
+    box-shadow: inset 0 1px 0 #bbd6e7;
+}
+
+/*
+ * Icon
+ */
+
+.btn-seqrly:before {
+    margin: -0.14em 0.1em 0 -0.5em;
+    content: "S";
+    font-size: 22px;
+    font-weight: bold;
+    color: #f16022;
+    padding-top:-5px;
+}
+
+.btn-seqrly.signin:beforeIcon {
+    margin: 0.0em 0.3em 0 -0.6em;
+    background-image: url(./sign-in-small.png);
+    background-repeat: no-repeat;
+/*    background-position: 0px 3px; */
+}
+
+.btn-seqrly.signup:beforeIcon {
+    margin: 0.0em 0.3em 0 -0.6em;
+    background-image: url(./sign-up-small.png);
+    background-repeat: no-repeat;
+/*    background-position: 0px 3px; */
+}
+
+.btn-seqrly.large:before {
+    margin: 0.08em 0.0em 0 -0.7em;
+    font-size: 28px;
+    height: 32px;
+}
+
+.btn-seqrly.signin.large:beforeIcon {
+    margin: 0.2em 0.3em 0 -0.6em;
+    background-image: url(./sign-in.png);
+    background-repeat: no-repeat;
+    /*background-position: 0px 4px;*/
+}
+
+.btn-seqrly.signup.large:beforeIcon {
+    margin: 0.2em 0.3em 0 -0.6em;
+    background-image: url(./sign-up.png);
+    background-repeat: no-repeat;
+    /*background-position: 0px 4px;*/
+}
+
+.logoFont {
+	color: #f16022;
+	font-size: 1.2em;
+	position: relative;
+	top: 0.05em;
+}
+
+.logoSuffixFont {
+	color: #DDD;
+	font-size: 1.2em;
+	position: relative;
+	top: 0.05em;
+}
+
+.btn-seqrly.large .logoFont {
+	top: 0.1em;
+}
+
+.btn-seqrly.large .logoSuffixFont {
+	top: 0.1em;
+}
+
+
+.divider {
+	border: 1px solid white;
+	margin-right: .5em;
+}
+
+
